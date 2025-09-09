@@ -15,16 +15,15 @@
                 if (parseInt(number1) < 0 || parseInt(number2) < 0) alert("Error :(") ;
                 else if ((operator == "%" || operator == "/")&& number2 == 0) alert("It's over 9000!")
                 else{
-                    // console.log(OnlyNumbers(number1));
                     alert(eval(number1 + operator + number2));
                 }         
             }else alert("Error :(")
         }
-        function OnlyNumbers(str) { //chk number function ;
+        function OnlyNumbers(str) {;
              return /^[0-9]+$/.test(str);
         }
         function greeting(){
-            alert("please use me...");
+            alert("Where are youuuu!!");
         }
 
         setTimeout(greeting, 30000);
@@ -44,7 +43,7 @@
             </select>
         </form>
         <input id="Num_2"/>
-        <input type="submit"value="Try me!"onclick="kidookleaw()"/>
+        <input type="submit"value="Result!"onclick="kidookleaw()"/>
     </div>
 </body>
 </html>

@@ -29,14 +29,10 @@ body, html {
     background-attachment: fixed;
 }
 .text{
-    /* text-align: center;
-    position: absolute ;  */
     color:white;
     height: 100%;
     margin:0 auto;
-    /* opacity: 50%; */
     transform: translate(50%,95%);
     left:50%;
     bottom: 0px;
-    /* background-color: b; */
 }

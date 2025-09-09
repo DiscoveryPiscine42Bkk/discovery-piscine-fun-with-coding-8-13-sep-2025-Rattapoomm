@@ -33,9 +33,7 @@ function addList(value, id = 'None'){
         list.prepend(div);
     }
     div.onclick = function(e){
-        // var div = this. ;
         if(confirm(`${this.id}`)){
-            // console.log(this.id);
             deletelist(this.id);
             this.remove();   
         }   
