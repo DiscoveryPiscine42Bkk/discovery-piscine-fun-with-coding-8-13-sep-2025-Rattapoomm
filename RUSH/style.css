@@ -1,0 +1,269 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+section, footer {
+    scroll-margin-top: 80px;
+}
+
+.bg-image {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:  rgb(71, 144, 240);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 0 50px;
+}
+
+.content {
+    flex: 1;
+    padding-right: 30px;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.image-content {
+    flex-shrink: 0;
+    margin-left: 30px;
+}
+
+.profile-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+}
+
+.btn {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 4px 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: rgb(255, 0, 0);
+    color: #ff0000;
+}
+
+@media screen and (max-width: 768px) {
+    .bg-overlay {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .content {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    .image-content {
+        margin-left: 0;
+    }
+    .profile-photo {
+        width: 200px;
+        height: 200px;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+.about-section {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #0056b3;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    color: whte;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-sizing: border-box;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #00aaff;
+}
+
+.nav-left a {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.portfolio-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.portfolio-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.portfolio-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #0056b3;
+}
+
+.portfolio-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 320px;
+    text-align: left;
+    transition: transform 0.2s;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+}
+
+.portfolio-item img {
+    width: 100%;
+    display: block;
+}
+
+.portfolio-item h3 {
+    font-size: 1.25rem;
+    margin: 15px;
+    color: #fb0238;
+}
+
+.portfolio-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0 15px 15px 15px;
+    color: #555;
+}
+
+.contact-section {
+    padding: 50px 20px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.contact-section p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #bdc3c7;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social-icon {
+    color: #ecf0f1;
+    font-size: 2.5rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icon:hover {
+    color: #3498db;
+    transform: scale(1.1);
+}

@@ -28,7 +28,7 @@ function addList(value, id = 'None'){
     var texts = document.createTextNode(value);
     var div = document.createElement('div');
     div.appendChild(texts); div.id = id ;
-    if (value === '' && id === 'None') alert('กรอกหน่อยยยยยยย!!!!');
+    if (value === '' && id === 'None') alert('ใส่ข้อความมา!!!!');
     else{
         list.prepend(div);
     }
